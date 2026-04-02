@@ -119,10 +119,10 @@ body {
 
 .band-title-bar h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(18px, 4vw, 28px);
+    font-size: clamp(18px, 4vw, 24px);
     letter-spacing: 3px;
     color: var(--white);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .separator-line {
@@ -142,7 +142,7 @@ body {
     font-style: italic;
     font-weight: 700;
     color: var(--gold-light);
-    font-size: clamp(11px, 1.8vw, 13.5px);
+    font-size: clamp(11px, 1.8vw, 15px);
     margin: 16px 0;
     padding: 0 4px;
 }
@@ -161,8 +161,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(19px, 4vw, 24px);
     color: var(--purple);
-    margin-bottom: 12px;
+    margin-bottom: 1.25rem;
     font-weight: 600;
+    margin-top: 0.5rem;
 }
 
 .who-we-are p {
@@ -188,7 +189,7 @@ body {
 .watch-live .section-title {
     color: var(--gold-light) !important;
     display: block !important;
-    margin-bottom: 12px;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
@@ -232,7 +233,7 @@ body {
 .video-purple-line {
     border: none;
     border-top: 1px solid var(--purple);
-    margin-top: 16px;
+    margin-top: 1.25rem;
 }
 
 .play-btn {
@@ -249,13 +250,13 @@ body {
     border-radius: 5px;
     padding: 12px 12px 14px;
     background: var(--panel);
-    margin-bottom: 0;
+    margin-top: -1rem;
 }
 
 .highlights-box .section-title {
     color: var(--gold-light);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1.25rem;
 }
 
 .highlights-grid {
@@ -349,7 +350,7 @@ body {
     font-size: 28px;
     color: var(--gold-light);
     margin: 3px 0 8px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     line-height: 1;
 }
@@ -362,7 +363,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     color: var(--white);
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.5);
 }
@@ -377,6 +378,7 @@ body {
     color: var(--white);
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.25rem;
 }
 
 .book-phone:hover,
@@ -396,7 +398,7 @@ body {
 
 .connect-box .section-title {
     color: var(--gold-light);
-    margin-bottom: 10px;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
@@ -462,7 +464,7 @@ body {
 
 .venues-section .section-title {
     color: var(--gold-light);
-    margin-bottom: 10px;
+    margin-bottom: 1.25rem;
     font-size: clamp(16px, 3vw, 21px);
 }
 
@@ -529,6 +531,12 @@ body {
     gap: 14px 60px;
     margin-bottom: 12px;
     align-items: start;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
 }
 
 /* ═══════════════════════════════
