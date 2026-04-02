@@ -23,9 +23,9 @@ body {
     font-family: 'Nunito', sans-serif;
     background: var(--black);
     color: var(--white);
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 14px 14px 36px;
+    padding: 20px 30px 36px;
 }
 
 
@@ -33,70 +33,16 @@ body {
 .header-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    gap: 20px;
     margin-bottom: 10px;
 }
 
 .header-images img {
     width: 100%;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
     border-radius: 4px;
     display: block;
-}
-
-/* Logo box */
-.logo-box {
-    background: radial-gradient(ellipse at 50% 80%, #3a1060 0%, #5a2d91 50%, #4a2070 100%);
-    border-radius: 4px;
-    border: 3px solid #7a5520;
-    height: 210px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 16px;
-}
-
-.logo-text {
-    font-family: 'Dancing Script', cursive;
-    color: var(--gold-light);
-    font-size: 48px;
-    line-height: 1;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-.logo-text span {
-    font-size: 26px;
-    display: block;
-    color: var(--gold-light);
-}
-
-.crowd-box {
-    background: #1a1010;
-    border-radius: 4px;
-    height: 210px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.crowd-box::before {
-    display: none;
-}
-
-.crowd-box-inner {
-    background: linear-gradient(160deg, #1a0f0f 0%, #2d1515 40%, #3a2020 100%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.08);
-    font-size: 60px;
 }
 
 /* ── BANNER TITLE ── */
@@ -150,8 +96,8 @@ body {
 /* ── TWO COLUMN LAYOUT ── */
 .two-col {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px 60px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px 30px;
     margin-bottom: 12px;
     align-items: start;
 }
@@ -194,30 +140,37 @@ body {
 }
 
 .video-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .play-circle-outline {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    margin-right: 10px;
+}
+
+.play-circle-outline,
+.spacer {
+    width: 40px;
 }
 
 .video-thumb {
     position: relative;
     cursor: pointer;
     border-radius: 3px;
-    overflow: hidden;
-    flex: 1;
     border: 2px solid var(--purple);
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 16 / 9;
+    min-width: 0;
+    overflow: hidden;
 }
 
-.video-thumb-inner {
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 155'%3E%3Crect width='300' height='155' fill='%23101020'/%3E%3Cellipse cx='30' cy='118' rx='13' ry='30' fill='%230a0a18'/%3E%3Ccircle cx='30' cy='80' r='10' fill='%230a0a18'/%3E%3Cellipse cx='66' cy='120' rx='12' ry='26' fill='%230a0a18'/%3E%3Ccircle cx='66' cy='87' r='9' fill='%230a0a18'/%3E%3Cellipse cx='102' cy='115' rx='14' ry='33' fill='%230a0a18'/%3E%3Ccircle cx='102' cy='74' r='11' fill='%230a0a18'/%3E%3Cellipse cx='140' cy='118' rx='11' ry='28' fill='%230a0a18'/%3E%3Ccircle cx='140' cy='82' r='9' fill='%230a0a18'/%3E%3Cellipse cx='175' cy='116' rx='12' ry='30' fill='%230a0a18'/%3E%3Ccircle cx='175' cy='78' r='9' fill='%230a0a18'/%3E%3Cellipse cx='210' cy='118' rx='11' ry='28' fill='%230a0a18'/%3E%3Ccircle cx='210' cy='82' r='9' fill='%230a0a18'/%3E%3Cellipse cx='245' cy='116' rx='12' ry='30' fill='%230a0a18'/%3E%3Ccircle cx='245' cy='78' r='9' fill='%230a0a18'/%3E%3Cellipse cx='278' cy='118' rx='11' ry='28' fill='%230a0a18'/%3E%3Ccircle cx='278' cy='82' r='9' fill='%230a0a18'/%3E%3Crect x='0' y='136' width='300' height='19' fill='%23000' opacity='0.5'/%3E%3C/svg%3E") center/cover;
-    height: 140px;
+.video-thumb iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.02);
 }
 
 .video-label {
@@ -322,23 +275,19 @@ body {
 }
 
 .book-phone-circle {
-    width: 26px;
     height: 26px;
     min-width: 26px;
-    background: var(--purple);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-right: 0;
 }
 
 .contact-circle {
-    width: 19px;
-    height: 19px;
-    min-width: 19px;
-    background: var(--purple);
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -350,8 +299,8 @@ body {
     font-size: 28px;
     color: var(--gold-light);
     margin: 3px 0 8px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     line-height: 1;
 }
 
@@ -378,7 +327,7 @@ body {
     color: var(--white);
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.2rem;
 }
 
 .book-phone:hover,
@@ -398,7 +347,7 @@ body {
 
 .connect-box .section-title {
     color: var(--gold-light);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
     text-align: center;
 }
 
@@ -416,39 +365,16 @@ body {
     opacity: 0.85;
 }
 
-.social-icon-box {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.social-icon-box.ig {
-    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.social-icon-box.fb {
-    background: #1877F2;
-}
-
-.social-icon-box.yt {
-    background: white;
-    padding: 6px 4px;
-}
-
 .social-label {
-    font-weight: 800;
-    font-size: 14px;
-    min-width: 76px;
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 100px;
     color: var(--white);
 }
 
 .social-handle {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
 }
@@ -508,7 +434,7 @@ body {
 /* ── FOOTER TAGLINE ── */
 .footer-tagline {
     text-align: center;
-    margin-top: 8px;
+    margin-top: 2.25rem;
 }
 
 .footer-tagline span {
@@ -528,7 +454,7 @@ body {
 .lower-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px 60px;
+    gap: 14px 30px;
     margin-bottom: 12px;
     align-items: start;
 }
