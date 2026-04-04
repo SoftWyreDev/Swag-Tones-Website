@@ -113,18 +113,23 @@ body {
 }
 
 .who-we-are p {
-    font-size: clamp(11.5px, 1.5vw, 13px);
-    font-weight: 700;
+    font-size: clamp(11.5px, 1.5vw, 14px);
+    font-weight: 600;
     font-style: italic;
     line-height: 1.6;
     margin-bottom: 10px;
     color: var(--white);
-    max-width: 500px;
+    max-width: 425px;
+    margin: 20px auto;
 }
 
 .who-we-are p em {
     color: var(--gold-light);
     font-style: italic;
+}
+
+.who-we-are .section-title {
+    margin-bottom: 2rem;
 }
 
 /* ── WATCH LIVE ── */
@@ -215,7 +220,7 @@ body {
 .highlights-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 14px;
+    gap: 16px 14px;
 }
 
 .highlight-item {
@@ -239,8 +244,8 @@ body {
 }
 
 .hi-text h4 {
-    font-size: 11px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2px;
     margin-bottom: 1px;
@@ -248,7 +253,7 @@ body {
 }
 
 .hi-text p {
-    font-size: 10.5px;
+    font-size: 11px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.35;
@@ -299,8 +304,8 @@ body {
     font-size: 28px;
     color: var(--gold-light);
     margin: 3px 0 8px;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
     line-height: 1;
 }
 
@@ -312,7 +317,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     color: var(--white);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.4rem;
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.5);
 }
@@ -327,7 +332,7 @@ body {
     color: var(--white);
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
 }
 
 .book-phone:hover,
@@ -347,7 +352,7 @@ body {
 
 .connect-box .section-title {
     color: var(--gold-light);
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -356,7 +361,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 20px;
     text-decoration: none;
     color: var(--white);
 }
@@ -392,28 +397,34 @@ body {
     color: var(--gold-light);
     margin-bottom: 1.25rem;
     font-size: clamp(16px, 3vw, 21px);
+    text-align: center;
+    padding-left: 0;
 }
 
 .venues-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+}
+
+.venues-section {
+    padding-left: 3px;
 }
 
 .venues-col h4 {
-    font-size: 11px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4px;
     color: var(--white);
     margin-bottom: 6px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
+    white-space: nowrap;
 }
 
 .venues-col h4::before {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .venues-col.wineries h4::before {
@@ -429,12 +440,24 @@ body {
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
+    margin-left: 26px;
 }
+
+.venues-col.wineries {
+    border-right: 1px solid var(--gold);
+    padding-right: 10px;
+    margin-right: 6px;
+}
+
+.venues-section .section-title {
+    padding-left: 0px;
+}
+
 
 /* ── FOOTER TAGLINE ── */
 .footer-tagline {
     text-align: center;
-    margin-top: 2.25rem;
+    margin-top: 1.5rem;
 }
 
 .footer-tagline span {
@@ -465,113 +488,16 @@ body {
     gap: 16px; 
 }
 
-/* ═══════════════════════════════
-    RESPONSIVE – MOBILE
-═══════════════════════════════ */
+/* RESPONSIVE – MOBILE */
+
 @media (max-width: 640px) {
-    body {
-        padding: 10px 10px 28px;
-    }
+  .two-col,
+  .lower-row {
+    grid-template-columns: 1fr;
+  }
 
-    .header-images {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
+  .video-thumb {
+    max-width: 100%;
+  }
 
-    .logo-box,
-    .crowd-box {
-        height: 180px;
-    }
-
-    .logo-text {
-        font-size: 40px;
-    }
-
-    .band-title-bar h1 {
-        font-size: 17px;
-        letter-spacing: 1px;
-    }
-
-    .two-col {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .watch-live {
-        text-align: center;
-    }
-
-    .video-row {
-        justify-content: center;
-    }
-
-    .video-thumb {
-        max-width: 100%;
-        flex: unset;
-        width: 100%;
-    }
-
-    .video-thumb-inner {
-        height: 180px;
-    }
-
-    .highlights-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px 8px;
-    }
-
-    .hi-icon {
-        width: 30px;
-        height: 30px;
-        min-width: 30px;
-        font-size: 13px;
-    }
-
-    .hi-text h4 {
-        font-size: 10px;
-    }
-
-    .hi-text p {
-        font-size: 10px;
-    }
-
-    .lower-row {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .venues-cols {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .booking-name {
-        font-size: 24px;
-    }
-
-    .book-phone {
-        font-size: 13px;
-    }
-
-    .book-email {
-        font-size: 12px;
-    }
-
-    .footer-tagline span {
-        font-size: 24px;
-    }
-
-    .social-row {
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 400px) {
-    .highlights-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .logo-text {
-        font-size: 32px;
-    }
 }
