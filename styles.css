@@ -202,6 +202,8 @@ body {
     display: none;
 }
 
+
+
 /* ── HIGHLIGHTS BOX ── */
 .highlights-box {
     border: 1.5px solid var(--gold);
@@ -446,7 +448,7 @@ body {
 .venues-col.wineries {
     border-right: 1px solid var(--gold);
     padding-right: 10px;
-    margin-right: 6px;
+    margin-right: 8px;
 }
 
 .venues-section .section-title {
@@ -489,15 +491,127 @@ body {
 }
 
 /* RESPONSIVE – MOBILE */
+@media (max-width: 950px) {
+    .two-col,
+    .lower-row {
+        grid-template-columns: 1fr;
+    }
 
-@media (max-width: 640px) {
-  .two-col,
-  .lower-row {
-    grid-template-columns: 1fr;
+    .video-thumb {
+        max-width: 100%;
+    }
+
+    .video-label {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .who-we-are p {
+        max-width: 700px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    }
+
+    .who-we-are .section-title {
+        margin-bottom: 0rem;
+    }
+
+    .watch-live .section-title {
+        margin-top: 0;
+    }
+
+    .book-title {
+        margin-top: 0rem;
+    }
+
+    .connect-box .section-title {
+        margin-top: 1rem;
+    }
+
+    .left-col {
+        gap: 20px;
+    }
+
+    .band-title-bar {
+        flex-wrap: nowrap;   
+        padding: 0 1.5rem;
+    }
+
+    .band-title-bar h1 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .sparkle svg:first-child {
+        width: 16px;
+        height: 16px;
+    }
+
+    .sparkle svg:last-child {
+        width: 12px;
+        height: 12px;
+    }
+
+    .tagline {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 12px 12px 36px;
+    }
+
+    .band-title-bar {
+        padding: 0 8px;
+    }
+
+    .band-title-bar {
+        flex-wrap: nowrap;
+    }
+
+    .who-we-are p {
+        max-width: none;
+        padding: 0 1rem;
+    }
+
+    .venues-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .venues-col.wineries {
+        border: none;
+        position: relative;
+        padding-bottom: 16px;
+        margin-bottom: 10px;
+    }
+
+    .venues-col.wineries::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+        right: 0;
+        height: 1px;
+        background: var(--gold);
+    }
+
+    .venues-col.events {
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+  .venues-col.wineries,
+  .venues-col.events {
+    margin-left: 2px;
   }
 
-  .video-thumb {
-    max-width: 100%;
-  }
-
+    .header-images {
+        gap: 10px;
+    }
 }
