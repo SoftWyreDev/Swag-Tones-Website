@@ -17,3 +17,10 @@ window.addEventListener("load", () => {
     phoneLink.innerHTML += formatted;
     phoneLink.href = `tel:${number}`;
 });
+
+const toggle = document.getElementById("navToggle");
+const links = document.getElementById("navLinks");
+
+toggle.addEventListener("click", () => {
+  links.classList.toggle("active");
+});

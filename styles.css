@@ -28,6 +28,56 @@ body {
     padding: 20px 30px 36px;
 }
 
+/* ── NAVBAR ── */
+.navbar {
+    border-bottom: 1.5px solid var(--gold);
+    border-top: 1.5px solid var(--gold);
+    background: var(--black);
+    margin-bottom: 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+/* Logo */
+.nav-logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold-light);
+}
+
+/* Hamburger */
+.nav-toggle {
+    display: none;
+    font-size: 26px;
+    color: var(--gold);
+    cursor: pointer;
+}
+
 .book-email b {
     display: none;
     text-decoration: none;
@@ -505,6 +555,41 @@ a {
     flex-direction: column;
     gap: 16px; 
 }
+/* ── SIMPLE FOOTER ── */
+.site-footer {
+    border-top: 1.5px solid var(--gold);
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Links */
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--gold-light);
+}
+
+body {
+    padding-bottom: 15px;
+}
 
 /* RESPONSIVE – MOBILE */
 @media (max-width: 950px) {
@@ -576,6 +661,17 @@ a {
     .tagline {
         font-size: 0.75rem;
     }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .site-footer {
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 650px) {
@@ -622,12 +718,37 @@ a {
         margin-left: 10px;
     }
 
-  .venues-col.wineries,
-  .venues-col.events {
-    margin-left: 2px;
-  }
+    .venues-col.wineries,
+    .venues-col.events {
+        margin-left: 2px;
+    }
 
     .header-images {
         gap: 10px;
+    }
+}
+
+/* MOBILE NAV */
+@media (max-width: 420px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 77px;
+        right: 12px;
+        background: var(--black);
+        border: 1.5px solid var(--gold);
+        border-radius: 6px;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        display: none;
+        gap: 40px;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
