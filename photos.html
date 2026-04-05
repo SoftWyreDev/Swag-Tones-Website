@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Swag Tones – Photos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="/images/logo.jpg" alt="The Swag Tones Logo">
+        </div>
+        <div class="nav-toggle" id="navToggle">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="photos.html" class="active">Photos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="band-title-bar">
+      <span class="sparkle">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+          <path d="M10 0 L11.5 8.5 L20 10 L11.5 11.5 L10 20 L8.5 11.5 L0 10 L8.5 8.5 Z" fill="#F0C040" />
+        </svg>
+        <svg width="12" height="12" viewBox="0 0 20 20" style="margin-left:2px">
+          <path d="M10 0 L11.5 8.5 L20 10 L11.5 11.5 L10 20 L8.5 11.5 L0 10 L8.5 8.5 Z" fill="#F0C040" />
+        </svg>
+      </span>
+      <h1>PHOTO GALLERY</h1>
+      <span class="sparkle">
+        <svg width="12" height="12" viewBox="0 0 20 20" style="margin-right:2px">
+          <path d="M10 0 L11.5 8.5 L20 10 L11.5 11.5 L10 20 L8.5 11.5 L0 10 L8.5 8.5 Z" fill="#F0C040" />
+        </svg>
+        <svg width="20" height="20" viewBox="0 0 20 20">
+          <path d="M10 0 L11.5 8.5 L20 10 L11.5 11.5 L10 20 L8.5 11.5 L0 10 L8.5 8.5 Z" fill="#F0C040" />
+        </svg>
+      </span>
+    </div>
+    <!-- MASONRY GALLERY -->
+    <div class="gallery-container" id="gallery">
+      <div class="gallery">
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=800" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=1200" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&h=500" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=1000" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=800" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=600" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── LIGHTBOX ── -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <div class="lightbox-inner">
+        <div class="lightbox-img-wrap">
+          <img id="lightbox-img" src="" alt="">
+        </div>
+      </div>
+
+      <div class="lightbox-counter" id="lightboxCounter">1 / 18</div>
+
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+
+      <button class="lightbox-arrow prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+      <button class="lightbox-arrow next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+
+      <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <span>© 2026 The Swag Tones</span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#">Events</a>
+          <a href="photos.html">Photos</a>
+        </div>
+      </div>
+    </footer>
+    
+  <script src="script.js"></script>
+  </body>
+</html>
