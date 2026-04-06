@@ -40,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 16px;
+    padding: 22px 16px;
 }
 
 /* Links */
@@ -658,8 +658,8 @@ body {
         margin-top: 6px;
     }
 
-    .site-footer {
-        padding-bottom: 0;
+    .photos-page .site-footer {
+        padding-bottom: 10px;
     }
 }
 
@@ -724,8 +724,12 @@ body {
         font-family: 'Montserrat', sans-serif;
     }
 
-        .nav-container {
+    .nav-container {
         padding: 16px 12px;
+    }
+    
+    .site-footer {
+        padding-bottom: 0;
     }
 
 }
@@ -1041,29 +1045,82 @@ body {
   .lightbox-inner { padding: 46px 46px 90px; }
 }
 
-
-/* Mobile Footer Fix */
-@media (max-width: 380px) {
+@media (max-width: 340px) {
     .photos-page { 
         padding: 8px 8px 30px;
-        min-height: 100vh;
     }
 
     .photos-page .band-title-bar h1 { 
         font-size: 18px; 
         letter-spacing: 1px; 
     }
-    
-    html, body {
-        height: 100%;
-    }
-
-    .photos-page .site-footer {
-        position: sticky;
-        top: 100vh;
-        padding: 16px 0 0;
-    }
 }
 
-
 /* END OF PHOTO GALLERY PAGE STYLES */
+
+/* EVENTS PAGE STYLES */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 8px;
+    margin-bottom: 24px;
+}
+
+.event-bubble {
+    background: var(--panel);
+    border: 1.5px solid var(--gold);
+    border-radius: 8px;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.event-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(13px, 2vw, 18px);
+    font-weight: 700;
+    color: var(--gold-light);
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.event-time {
+    font-size: clamp(12px, 1.8vw, 16px);
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.event-venue {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(14px, 2.2vw, 17px);
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 3px;
+}
+
+.event-address {
+    font-size: clamp(11px, 1.6vw, 15px);
+    font-weight: 600;
+    color: rgba(200, 148, 10, 0.9);
+    font-style: italic;
+}
+
+.event-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-page .site-footer {
+    margin-top: auto;
+}
+
+.event-page .band-title-bar {
+    margin-top: 0;
+}
+
+.event-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
