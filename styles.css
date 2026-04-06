@@ -1041,10 +1041,29 @@ body {
   .lightbox-inner { padding: 46px 46px 90px; }
 }
 
-@media (max-width: 350px) {
-  body { padding: 8px 8px 30px; }
 
-  .band-title-bar h1 { font-size: 18px; letter-spacing: 1px; }
+/* Mobile Footer Fix */
+@media (max-width: 380px) {
+    .photos-page { 
+        padding: 8px 8px 30px;
+        min-height: 100vh;
+    }
+
+    .photos-page .band-title-bar h1 { 
+        font-size: 18px; 
+        letter-spacing: 1px; 
+    }
+    
+    html, body {
+        height: 100%;
+    }
+
+    .photos-page .site-footer {
+        position: sticky;
+        top: 100vh;
+        padding: 16px 0 0;
+    }
 }
+
 
 /* END OF PHOTO GALLERY PAGE STYLES */
