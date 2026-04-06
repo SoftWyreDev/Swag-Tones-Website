@@ -1,8 +1,8 @@
 // Event List
 const data = `
-Saturday, March 7, 2026 | 5:30 - 7:30 p.m. | Discretion Brewery | 2703 41st Ave, Soquel, CA
-Friday, March 13, 2026 | 6:00 - 9:00 p.m. | Shanty Shack Brewing | 138 Fern St, Santa Cruz, CA
-Friday, March 20, 2026 | 8:00 - 11:00 p.m. | Crow's Nest | 218 E Cliff Dr, Santa Cruz, CA
+Saturday, April 11, 2026 | 7:00 - 10:00 p.m. | Sevy's Bar + Kitchen | 7500 Old Dominion Ct, Aptos, CA
+Friday, April 17, 2026 | 6:45 - 9:15 p.m. | Santa Cruz Yacht Club | 244 4th Ave, Santa Cruz, CA
+Friday, April 24, 2026 | 7:00 - 10:00 p.m. | Vino by the Sea | 55 Municipal Wharf Ste B, Santa Cruz, CA
 `;
 
 const container = document.getElementById("events");

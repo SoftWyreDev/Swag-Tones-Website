@@ -986,7 +986,7 @@ body {
 .lightbox-thumb {
   flex-shrink: 0;
   width: 52px;
-  height: 40px;
+  height: 30px;
   object-fit: cover;
   border-radius: 3px;
   border: 1.5px solid transparent;
@@ -1043,6 +1043,12 @@ body {
   #lightbox-img { max-height: calc(100vh - 130px); }
 
   .lightbox-inner { padding: 46px 46px 90px; }
+
+  .lightbox-arrow {
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    }
 }
 
 @media (max-width: 340px) {
