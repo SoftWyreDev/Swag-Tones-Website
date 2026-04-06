@@ -26,13 +26,6 @@ toggle.addEventListener("click", () => {
 });
 
 (function () {
-  // ── NAV TOGGLE ──
-  const navToggle = document.getElementById('navToggle');
-  const navLinks  = document.getElementById('navLinks');
-  if (navToggle) {
-    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
-  }
-
   // ── GATHER ALL GALLERY ITEMS ──
   const gallery   = document.getElementById('gallery');
   const items     = Array.from(gallery.querySelectorAll('.gallery-item'));

@@ -39,22 +39,16 @@ body {
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-}
-
-/* Logo */
-.nav-logo img {
-    height: 40px;
-    width: auto;
+    justify-content: center;
+    padding: 20px 16px;
 }
 
 /* Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
-    font-size: 1.1rem;
+    gap: 4rem;
+    font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,18 +58,13 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     transition: 0.3s ease;
+    background: rgba(123, 75, 191, 0.55);
+    padding: 6px 14px;
+    border-radius: 999px;
 }
 
 .nav-links a:hover {
     color: var(--gold-light);
-}
-
-/* Hamburger */
-.nav-toggle {
-    display: none;
-    font-size: 26px;
-    color: var(--gold);
-    cursor: pointer;
 }
 
 .book-email b {
@@ -726,30 +715,42 @@ body {
     .header-images {
         gap: 10px;
     }
-}
-
-/* MOBILE NAV */
-@media (max-width: 420px) {
-    .nav-toggle {
-        display: block;
-    }
 
     .nav-links {
-        position: absolute;
-        top: 77px;
-        right: 12px;
-        background: var(--black);
-        border: 1.5px solid var(--gold);
-        border-radius: 6px;
-        flex-direction: column;
-        width: 200px;
-        padding: 20px;
-        display: none;
-        gap: 40px;
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
     }
 
-    .nav-links.active {
+        .nav-container {
+        padding: 16px 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        list-style: none;
         display: flex;
+        gap: 2rem;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav-links a {
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 0.9rem;
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -808,7 +809,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Placeholder tiles for demo (shown when img fails or before real images) */
+/* Placeholder tiles */
 .gallery-item .placeholder {
   width: 100%;
   display: block;
