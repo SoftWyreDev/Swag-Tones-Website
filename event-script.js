@@ -1,17 +1,24 @@
 // Event List
 const data = `
+Saturday, Aug 8, 2026 | 7:00 - 10:00 p.m. | SEVYs Bar and Kitchen | 7500 Old Dominion Ct, Aptos, CA 95003
 
-Saturday, June 27, 2026 | 10:00 - 11:59 p.m. | Fernwood Campground and Resort | 47200 CA-1, Big Sur, CA 93920
+Friday, Aug 14, 2026 | 6:00 - 8:00p.m. | Steel Bonnet Brewing Company | 20 Victor Square Ext B, Scotts Valley, CA 95066
 
-Monday, June 29, 2026 | 6:00 - 9:00 p.m. | The Sand Bar |  211 Esplanade, Capitola, CA 95010
+Sunday, Aug 19, 2026 | 7:45 - 10:00 p.m. | Bay Bar and Grill Twilight After Party | 211 Esplanade, Capitola, CA 95010
 
-Friday, July 10, 2026 | 7:00 - 10:00 p.m. | SEVYs Bar and Kitchen | 7500 Old Dominion Ct, Aptos, CA 95003
+Friday, Aug 21, 2026 | 9:00 - 12:00 a.m. | The Crows Nest Restaurant  | 2218 E. Cliff Dr, Santa Cruz, CA 95062
 
-Sunday, July 19, 2026 | 2:00 - 4:00 p.m. | Art and Wine Festival at Bargetto Winery | 3535 N Main St, Soquel, CA 95073
+Saturday, Aug 22, 2026 | 1:00 - 4:00 p.m. | KBAA Wines Pre-Harvest Party | 1900 Glen Canyon Road, Santa Cruz, CA 95060
 
-Friday, July 24, 2026 | 6:00 - 8:30p.m. | Four Points by Sheraton Presents Music Under The Stars | 5030 Scotts Valley Dr, Scotts Valley, CA 95066
+Saturday, Aug 29, 2026 | 8:30 - 11:30 p.m. | The Sand Bar |  211 Esplanade, Capitola, CA 95010
 
-Saturday, July 31, 2026 | 7:00 - 10:00 p.m. | Bruno’s Bar and Grill | 230 Mt Hermon Rd, Scotts Valley, CA 95066
+Friday, Sept 4, 2026 | 8:00 - 11:00 p.m. | The Catalyst Atrium | 1011 Pacific Ave, Santa Cruz, CA 95060
+
+Friday, Sept 11, 2026 | 7:00 - 10:00 p.m. | Vino By The Sea | 55 Municipal Wharf Ste B, Santa Cruz, CA 95060
+
+Sunday, Sept 20, 2026 | 1:00 - 4:00 p.m. | Miramar Vineyards | 12255 New Ave, San Martin, CA 95046
+
+Friday, Sept 25, 2026 | 5:30 - 7:30 p.m. | Kissed By An Angel Wines | 222 Mt Hermon Rd Ste I, Scotts Valley, CA 95066
 `;
 
 const container = document.getElementById("events");
