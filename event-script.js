@@ -1,8 +1,7 @@
 // Event List
 const data = `
-Wednesday, Aug 19, 2026 | 7:45 - 10:00 p.m. | Bay Bar and Grill Twilight After Party | 211 Esplanade, Capitola, CA 95010
 
-Friday, Aug 21, 2026 | 9:00 - 12:00 a.m. | The Crows Nest Restaurant  | 2218 E. Cliff Dr, Santa Cruz, CA 95062
+Friday, Aug 21, 2026 | 8:00 - 11:00 p.m. | The Crows Nest Restaurant  | 2218 E. Cliff Dr, Santa Cruz, CA 95062
 
 Saturday, Aug 22, 2026 | 1:00 - 4:00 p.m. | KBAA Wines Pre-Harvest Party | 1900 Glen Canyon Road, Santa Cruz, CA 95060
 
