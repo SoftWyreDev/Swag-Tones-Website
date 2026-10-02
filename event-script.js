@@ -1,12 +1,14 @@
 // Event List
 const data = `
-Saturday, Aug 29, 2026 | 8:30 - 11:30 p.m. | The Sand Bar |  211 Esplanade, Capitola, CA 95010
+Friday, Oct 2, 2026 | 8:00 - 11:00 p.m. | Crows Nest Restaurant | 2218 E Cliff Dr, Santa Cruz, CA 95062
 
-Friday, Sept 11, 2026 | 7:00 - 10:00 p.m. | Vino By The Sea | 55 Municipal Wharf Ste B, Santa Cruz, CA 95060
+Wednesday, Oct 7, 2026 | 4:00 - 6:00 p.m. | Bay Bar and Grill Happy Hour | 209 Esplanade, Capitola, CA 95010
 
-Sunday, Sept 20, 2026 | 1:00 - 4:00 p.m. | Miramar Vineyards | 12255 New Ave, San Martin, CA 95046
+Friday, Oct 16, 2026 | 6:00 - 9:00 p.m. | El Vaquero Winery Tasting Room | 2901 Freedom Blvd Corralitos, CA 95076
 
-Friday, Sept 25, 2026 | 5:30 - 7:30 p.m. | Kissed By An Angel Wines | 222 Mt Hermon Rd Ste I, Scotts Valley, CA 95066
+Thursday, Oct 22, 2026 | 5:30 - 7:30 p.m. | Kissed By An Angel Wines | 222 Mt Hermon Rd Ste I, Scotts Valley, CA 95066
+
+Saturday, Oct 31, 2026 | 8:00 p.m - 11:00 p.m. | Bruno's Bar and Grill | 230 Mt Hermon Rd, Scotts Valley, 95066
 `;
 
 const container = document.getElementById("events");
