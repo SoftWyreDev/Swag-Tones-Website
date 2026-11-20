@@ -1,12 +1,14 @@
 // Event List
 const data = `
-Saturday, Oct 31, 2026 | 8:00 p.m - 11:00 p.m. | Bruno's Bar and Grill | 230 Mt Hermon Rd, Scotts Valley, 95066
+Friday, Nov 20, 2026 | 6:45 - 9:15 p.m. |  Private Event 
 
-Friday, Nov 6, 2026 | 8:30 - 11:30 p.m. | The Sand Bar | 211 Esplanade, Capitola, CA 95010
+Saturday, Dec 5th, 2026 | 5:30 - 7:30 p.m. | Kissed By An Angel Wines | 222 Mt Hermon Rd Ste I, Scotts Valley, CA 95066
 
-Friday , Nov 13, 2026 | 7:00 - 10:00 p.m. | SEVYs Bar and Kitchen | 7500 Old Dominion Ct, Aptos, CA 95003
+Friday, Dec 11, 2026 | 7:00 - 10:00 p.m. | SEVYs Bar and Kitchen | 7500 Old Dominion Ct, Aptos, CA 95003
 
-Friday, Nov 20, 2026 | 5:45 - 9:30 p.m. |  Private Event 
+Thursday, Dec 17th, 2026 | 5:30 - 7:30 p.m. | Kissed By An Angel Wines | 222 Mt Hermon Rd Ste I, Scotts Valley, CA 95066
+
+Thursday, Dec 31st, 2026 | 7:00 - 12:30 a.m. | Vino By The Sea | 55 Municipal Wharf Ste B, Santa Cruz, CA 95060
 `;
 
 const container = document.getElementById("events");
